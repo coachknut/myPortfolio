@@ -45,6 +45,14 @@ a {
   font-size: 1.5rem;
 }
 
+.section-hamburger {
+  border: 3px solid black;
+}
+
+.section-hotdog {
+  border: 3px solid black;
+}
+
 .hamburger-container {
   display: -webkit-box;
   display: -ms-flexbox;
