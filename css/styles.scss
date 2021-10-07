@@ -26,30 +26,37 @@ body {
     justify-content: space-between;
 }
 
-#nav {
-    margin: 0 auto;
-    padding: 0;
-}
-
-ul {
-    display: flex;
-}
-
-li {
+.nav-link {
+    transition: 0.3s ease;
+    background: $global-bg-color;
+    color: #ffffff;
     text-decoration: none;
-    list-style-type: none;
-    margin: 1rem;
-    text-transform: lowercase;
-    font-family: 'Poppins', sans-serif;  
+    border-top: 4px solid $global-bg-color;
+    border-bottom: 4px solid $global-bg-color;
+    margin: 0 20px;
 }
 
-li:hover {
-    background-color: $global-hover-bt-color;
+.nav-link:hover {
+    border-top: 4px solid $global-hover-link-color;
+    border-bottom: 4px solid $global-hover-link-color;
+    padding: 6px 0; 
 }
 
 a {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+}
+
+.hamburger-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-thumb {
+    display: flex;
+    justify-content: left;
+    align-items: left;
 }
     

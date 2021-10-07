@@ -22,32 +22,50 @@ body {
           justify-content: space-between;
 }
 
-#nav {
-  margin: 0 auto;
-  padding: 0;
-}
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-li {
+.nav-link {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #291b2b;
+  color: #ffffff;
   text-decoration: none;
-  list-style-type: none;
-  margin: 1rem;
-  text-transform: lowercase;
-  font-family: 'Poppins', sans-serif;
+  border-top: 4px solid #291b2b;
+  border-bottom: 4px solid #291b2b;
+  margin: 0 20px;
 }
 
-li:hover {
-  background-color: #c70285;
+.nav-link:hover {
+  border-top: 4px solid #c70285;
+  border-bottom: 4px solid #c70285;
+  padding: 6px 0;
 }
 
 a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
+}
+
+.hamburger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 /*# sourceMappingURL=styles.css.map */
