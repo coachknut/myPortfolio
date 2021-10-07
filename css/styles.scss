@@ -1,0 +1,55 @@
+
+//GLOBAL VARIABLES
+
+$global-bg-color: rgb(41, 27, 43);
+$global-btn-color: rgb(141, 5, 96);
+$global-hover-bt-color: rgb(199, 2, 133);
+$global-hover-link-color: rgb(199, 2, 133);
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-color: rgb(41, 27, 43);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    margin:  auto ;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav {
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 1rem;
+    text-transform: lowercase;
+    font-family: 'Poppins', sans-serif;  
+}
+
+li:hover {
+    background-color: $global-hover-bt-color;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+    
