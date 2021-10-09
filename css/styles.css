@@ -85,9 +85,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100vh;
   background: #fcc73a linear-gradient(45deg, #d1681a, #fcc73a);
 }
