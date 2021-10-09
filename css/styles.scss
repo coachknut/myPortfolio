@@ -1,70 +1,142 @@
 
 //GLOBAL VARIABLES
 
-$global-bg-color: rgb(41, 27, 43);
-$global-btn-color: rgb(141, 5, 96);
-$global-hover-bt-color: rgb(199, 2, 133);
-$global-hover-link-color: rgb(199, 2, 133);
+// SECTION BG COLORS
+$bg-about-color: #fcc73a linear-gradient(45deg,#d1681a,#fcc73a);
+$bg-projects-color: #51af3d linear-gradient(45deg,#038d58,#51af3d);
+$bg-color-contact: #13b6c8 linear-gradient(45deg,#006292,#13b6c8);
+
 
 
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
-    background-color: rgb(41, 27, 43);
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-#header {
-    margin:  auto ;
-    padding: 0;
+.nav {
     display: flex;
-    align-items: center;
+    position: sticky;
     justify-content: space-between;
+    padding: 1rem 2rem;
+    top: 0;
+
+    ul {
+        display: flex;    
+        align-items: center;
+    }
+
+    li {    
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;  
+        text-shadow: 1px 1px rgb(107, 107, 107);      
+    }
+    
 }
 
 .nav-link {
     transition: 0.3s ease;
-    background: $global-bg-color;
     color: #ffffff;
     text-decoration: none;
-    border-top: 4px solid $global-bg-color;
-    border-bottom: 4px solid $global-bg-color;
     margin: 0 20px;
 }
 
 .nav-link:hover {
-    border-top: 4px solid $global-hover-link-color;
-    border-bottom: 4px solid $global-hover-link-color;
-    padding: 6px 0; 
+    background-color: #fcc73a;
+    padding: 0.5rem;
+ 
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+.logo {
+    position: absolute; //absolute makes me move this anywhere on the screen
+    left: 10%;
+    top: 30%;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgb(107, 107, 107);
+    font-family: 'Poppins', sans-serif;
 }
 
-.section-hamburger {
-    border: 3px solid black;
+.home-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
-.section-hotdog {
-    border: 3px solid black;
+.section-home {
+    height: 100vh;
 }
 
-.hamburger-container {
+
+.section-about {
+    display: flex;
+    justify-content:center;
+    height: 100vh;
+    background: $bg-about-color;
+
+    h1 {
+        color: white;
+        font-size: 4rem;
+        left: 10%;
+        margin-top: 3rem;
+    }
+}
+
+
+.section-projects {
     display: flex;
     justify-content: center;
-    align-items: center;
+    background: $bg-projects-color;
+    height: 100vh;
+    
+
+    h1 {
+        color: white;
+        font-size: 4rem;
+        left: 10%;
+        margin-top: 3rem;
+    }
+
+    img {
+        max-width: 25%;
+        max-height: 25%;
+        
+    }
+
+    img:hover {
+        border-radius: 100%;
+
+    }
+
 }
 
-.image-thumb {
+.section-contact {
+
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: space-between;
+    background: $bg-color-contact;
+
+    h1 {
+        position: absolute;
+        color: white;
+        font-size: 4rem;
+        left: 10%;
+        margin-top: 3rem;
+    }
 }
-    

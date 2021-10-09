@@ -8,72 +8,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Odin-recipes</title>
+    <title>>Knut Olaisen</title>
 </head>
 <body>
-    <header id="header">
-        <h1 id="logo">Favourte recipes</h1>
-        <nav id="nav">    
-            <a class="nav-link" href="#section-hamburger">Hamburger</a>
-            <a class="nav-link" href="#section-hotdog">Hotdog</a>
-            <a class="nav-link" href="#section-taco">Taco</a>
-            
-    </nav>    
-    </header>
-    
-    <section class="section-hamburger" id="section-hamburger">
+
         
-        <div class="burger-container">
-            <img class="image-thumb"src="images/hamburger.jpg" alt="Image of a hamburger">
-            <h1>Hamburger</h1>
-            <p>Best bruger in town!</p>
-
-            <h3>Ingrediens</h3>
-            <ul>
-                <li>Beef</li>
-                <li>Bread</li>
-                <li>salad</li>
-                <li>Onions</li>
-                <li>Anything you like!</li>
-            </ul>
-
-            <h3>How to make a burger Steps</h3>
-            <ol>
-                <li>Step 1</li>
-                <li>step 2</li>
-                <li>step 3</li>
-                <li>step 4</li>
-            </ol>
-      </div>
-        
-
-    </section>
-
-    <section class="section-hotdog" id="section-hotdog">
-        <h1>Hotdogs</h1>
-        <img src="images/hotdog.jpeg" alt="image of a hotdog">
-        <p>Description: Image of a hotdog!</p>
-
-        <h3>Ingrediens</h3>
+    <nav class="nav" id="nav" >
+        <h1>portfolio</h1>
         <ul>
-            <li>Ketchup</li>
-            <li>Bread</li>
-            <li>Saucsage</li>
+            <li><a class="nav-link" href="#section-home">home</a></li>
+            <li><a class="nav-link" href="#section-about">about</a></li>
+            <li><a class="nav-link" href="#section-projects">projects</a></li>
+            <li><a class="nav-link" href="#section-contact">contact</a></li>
         </ul>
-    
-        <h3>How to make a Hotdog: Steps</h3>
-        <ol>
-            <li>Step 1</li>
-            <li>step 2</li>
-            <li>step 3</li>
-            <li>step 4</li>
-        </ol>
-    
-    </section>
+    </nav> <!-- END NAVIGATION -->
+       <!-- LOOPING VIDEO AT TOP OF THE PAGE (OUTSIDE HOME SECTION)-->
+       <video autoplay muted loop class="home-video" id="home-video">
+        <source src="videos/energy_video.mp4" type="video/mp4">
+    </video>
 
-    <section class="section-taco" id="section-taco">
 
-    </section>
+    <!--ALL SECTION START -->
+    <section class="section-home" id="section-home">
+        <h1 class="logo" id="logo">“If you really look closely <br>
+                                    most overnight successes <br>
+                                    took a long time.” — Steve Jobs
+        </h1>
+
+    </section> <!-- END SECTION HOME-->
+
+    <!-- LOOPING VIDEO AT TOP OF THE PAGE (OUTSIDE HOME SECTION)-->
+    <video autoplay muted loop class="home-video" id="home-video">
+        <source src="videos/energy_video.mp4" type="video/mp4">
+    </video>
+
+
+
+    <section class="section-about" id="section-about">
+        <h1>ABOUT ME!</h1>
+    </section> <!-- END SECTION ABOUT-->
+
+    <section class="section-projects" id="section-projects">
+
+        <div class="project-wrapper">
+            <h1>MY PROJECTS</h1>
+            <img src="images/hamburger.jpg" alt="">
+            <img src="images/hamburger.jpg" alt="">  
+            <img src="images/hamburger.jpg" alt="">  
+            <img src="images/hamburger.jpg" alt="">      
+        </div>
+
+    </section> <!-- END SECTION PROJECTS-->
+
+    <section class="section-contact" id="section-contact">
+        <h1>CONTACT ME</h1>
+
+    </section> <!-- END SECTION CONTACT-->
+
+    <!--ALL SECTIONS ENDS-->
 
 </body>
 </html>
