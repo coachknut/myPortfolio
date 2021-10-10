@@ -29,21 +29,21 @@ body {
     top: 0;
 
     ul {
-        display: flex;    
+        display: flex;
         align-items: center;
     }
 
-    li {    
+    li {
         list-style: none;
     }
 
     a {
         text-decoration: none;
         color: white;
-        font-size: 1.2rem;  
-        text-shadow: 1px 1px rgb(107, 107, 107);      
+        font-size: 1.2rem;
+        text-shadow: 1px 1px rgb(107, 107, 107);
     }
-    
+
 }
 
 .nav-link {
@@ -56,10 +56,10 @@ body {
 .nav-link:hover {
     background-color: #fcc73a;
     padding: 0.5rem;
- 
+
 }
 
-.logo {
+.slogan {
     position: absolute; //absolute makes me move this anywhere on the screen
     left: 10%;
     top: 30%;
@@ -76,7 +76,7 @@ body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1;
+    z-index: -1; //if not -1 the NAV is not vsisible!
 }
 
 .section-home {
@@ -86,24 +86,27 @@ body {
 
 .section-about {
     display: flex;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
     background: $bg-about-color;
+    height: 70vh;
 
     h1 {
+        position: absolute;
         color: white;
         font-size: 4rem;
         left: 10%;
         margin-top: 3rem;
     }
-}
 
+}
 
 .section-projects {
     display: flex;
     justify-content: center;
     background: $bg-projects-color;
     height: 100vh;
-    
+
 
     h1 {
         color: white;
@@ -115,18 +118,16 @@ body {
     img {
         max-width: 25%;
         max-height: 25%;
-        
     }
 
     img:hover {
-        border-radius: 100%;
-
+        border: 100px solid black;
     }
 
 }
 
 .section-contact {
-
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     background: $bg-color-contact;

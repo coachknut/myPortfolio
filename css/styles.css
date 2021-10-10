@@ -57,7 +57,7 @@ body {
   padding: 0.5rem;
 }
 
-.logo {
+.slogan {
   position: absolute;
   left: 10%;
   top: 30%;
@@ -85,11 +85,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #fcc73a linear-gradient(45deg, #d1681a, #fcc73a);
+  height: 70vh;
 }
 
 .section-about h1 {
+  position: absolute;
   color: white;
   font-size: 4rem;
   left: 10%;
@@ -120,10 +127,11 @@ body {
 }
 
 .section-projects img:hover {
-  border-radius: 100%;
+  border: 2px solid black;
 }
 
 .section-contact {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
