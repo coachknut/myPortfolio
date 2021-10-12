@@ -13,13 +13,11 @@ $bg-color-contact: #13b6c8 linear-gradient(45deg,#006292,#13b6c8);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-body {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-size: 62,5%;
 }
+
+
 
 .nav {
     display: flex;
@@ -27,6 +25,8 @@ body {
     justify-content: space-between;
     padding: 1rem 2rem;
     top: 0;
+    background: black;
+    z-index: 999;
 
     ul {
         display: flex;
@@ -55,7 +55,6 @@ body {
 
 .nav-link:hover {
     background-color: #fcc73a;
-    padding: 0.5rem;
 
 }
 

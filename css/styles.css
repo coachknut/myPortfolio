@@ -4,11 +4,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-size: 62,5%;
 }
 
 .nav {
@@ -22,6 +19,8 @@ body {
           justify-content: space-between;
   padding: 1rem 2rem;
   top: 0;
+  background: black;
+  z-index: 999;
 }
 
 .nav ul {
@@ -54,7 +53,6 @@ body {
 
 .nav-link:hover {
   background-color: #fcc73a;
-  padding: 0.5rem;
 }
 
 .slogan {
@@ -127,7 +125,7 @@ body {
 }
 
 .section-projects img:hover {
-  border: 2px solid black;
+  border: 100px solid black;
 }
 
 .section-contact {
