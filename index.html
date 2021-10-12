@@ -14,19 +14,20 @@
     <nav class="nav" id="nav" >
         <h1>frontend developer</h1>
         <ul>
-            <li><a class="nav-link" href="#section-home">home</a></li>
-            <li><a class="nav-link" href="#section-about">about</a></li>
-            <li><a class="nav-link" href="#section-projects">projects</a></li>
-            <li><a class="nav-link" href="#section-contact">contact</a></li>
+            <li class="nav-link"><a href="#section-home">home</a></li>
+            <li class="nav-link"><a href="#section-about">about</a></li>
+            <li class="nav-link"><a href="#section-projects">projects</a></li>
+            <li class="nav-link"><a href="#section-contact">contact</a></li>
         </ul>
     </nav> <!-- END NAVIGATION -->
-       <!-- LOOPING VIDEO AT TOP OF THE PAGE (OUTSIDE HOME SECTION)-->
-    <video autoplay muted loop class="home-video" id="home-video">
-        <source src="videos/energy_video.mp4" type="video/mp4">
-    </video>
 
     <!--ALL SECTION START -->
     <section class="section-home" id="section-home">
+       <!-- LOOPING VIDEO AT TOP OF THE PAGE (OUTSIDE HOME SECTION)-->
+        <video autoplay muted loop class="home-video" id="home-video">
+            <source src="videos/energy_video.mp4" type="video/mp4">
+        </video>
+
         <h1 class="slogan" id="slogan">
             “If you really look closely <br>
             most overnight successes <br>
@@ -34,22 +35,18 @@
             — Steve Jobs
         </h1>
 
-    </section> <!-- END SECTION HOME-->
-
-    <!-- LOOPING VIDEO AT TOP OF THE PAGE (OUTSIDE HOME SECTION)-->
-    <video autoplay muted loop class="home-video" id="home-video">
-        <source src="videos/energy_video.mp4" type="video/mp4">
-    </video>
+    </section>
+    <!-- END SECTION HOME-->
 
     <section class="section-about" id="section-about">
-
-        <h1>ABOUT ME!!!!!</h1>
-        <img class="profile-img" src="images/profile-me.jpg" alt="Knut Olaisen">
-
-    </section> <!-- END SECTION ABOUT-->
+        <div class="about-wrapper">
+            <h1>This is me - A frontend developer</h1>
+            <img class="profile-img" src="images/profile-me.jpg" alt="Knut Olaisen">
+        </div>
+    </section>
+    <!-- END SECTION ABOUT-->
 
     <section class="section-projects" id="section-projects">
-
         <div class="project-wrapper">
             <h1>MY PROJECTS</h1>
             <img src="images/hamburger.jpg" alt="">
@@ -57,15 +54,14 @@
             <img src="images/hamburger.jpg" alt="">
             <img src="images/hamburger.jpg" alt="">
         </div>
-
-    </section> <!-- END SECTION PROJECTS-->
+    </section>
+    <!-- END SECTION PROJECTS-->
 
     <section class="section-contact" id="section-contact">
         <h1>CONTACT ME</h1>
 
-    </section> <!-- END SECTION CONTACT-->
-
-    <!--ALL SECTIONS ENDS-->
+    </section>
+    <!-- END SECTION CONTACT-->
 
 </body>
 </html>

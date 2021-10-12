@@ -43,7 +43,7 @@
   text-shadow: 1px 1px #6b6b6b;
 }
 
-.nav-link {
+.nav .nav-link {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   color: #ffffff;
@@ -51,22 +51,15 @@
   margin: 0 20px;
 }
 
-.nav-link:hover {
+.nav .nav-link:hover {
   background-color: #fcc73a;
 }
 
-.slogan {
-  position: absolute;
-  left: 10%;
-  top: 30%;
-  font-size: 4rem;
-  line-height: 4rem;
-  text-transform: uppercase;
-  text-shadow: 1px 1px #6b6b6b;
-  font-family: 'Poppins', sans-serif;
+.section-home {
+  height: 80vh;
 }
 
-.home-video {
+.section-home .home-video {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -75,30 +68,38 @@
   z-index: -1;
 }
 
-.section-home {
-  height: 100vh;
+.section-home .slogan {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #6b6b6b;
+  z-index: 3;
 }
 
 .section-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background: #fcc73a linear-gradient(45deg, #d1681a, #fcc73a);
-  height: 70vh;
+  height: 100vh;
+}
+
+.section-about .about-wrapper {
+  margin: 2rem;
+  border: 1px solid black;
+  width: 100%;
+  padding: 2rem;
 }
 
 .section-about h1 {
-  position: absolute;
   color: white;
-  font-size: 4rem;
-  left: 10%;
-  margin-top: 3rem;
+  font-size: 3rem;
 }
 
 .section-projects {
@@ -117,15 +118,6 @@
   font-size: 4rem;
   left: 10%;
   margin-top: 3rem;
-}
-
-.section-projects img {
-  max-width: 25%;
-  max-height: 25%;
-}
-
-.section-projects img:hover {
-  border: 100px solid black;
 }
 
 .section-contact {

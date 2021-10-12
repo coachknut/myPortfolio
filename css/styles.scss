@@ -17,8 +17,6 @@ $bg-color-contact: #13b6c8 linear-gradient(45deg,#006292,#13b6c8);
     font-size: 62,5%;
 }
 
-
-
 .nav {
     display: flex;
     position: sticky;
@@ -44,58 +42,61 @@ $bg-color-contact: #13b6c8 linear-gradient(45deg,#006292,#13b6c8);
         text-shadow: 1px 1px rgb(107, 107, 107);
     }
 
-}
-
-.nav-link {
-    transition: 0.3s ease;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 20px;
-}
-
-.nav-link:hover {
-    background-color: #fcc73a;
-
-}
-
-.slogan {
-    position: absolute; //absolute makes me move this anywhere on the screen
-    left: 10%;
-    top: 30%;
-    font-size: 4rem;
-    line-height: 4rem;
-    text-transform: uppercase;
-    text-shadow: 1px 1px rgb(107, 107, 107);
-    font-family: 'Poppins', sans-serif;
-}
-
-.home-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1; //if not -1 the NAV is not vsisible!
+    .nav-link {
+        transition: 0.3s ease;
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+    
+    .nav-link:hover {
+        background-color: #fcc73a;
+    
+    }
 }
 
 .section-home {
-    height: 100vh;
-}
+    height: 80vh;
+      
+    .home-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1; //if not -1 the NAV is not vsisible!
+    }
 
+    .slogan {
+        position: absolute; //absolute makes me move this anywhere on the screen
+        left: 10%;
+        top: 30%;
+        font-size: 4rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        text-shadow: 1px 1px rgb(107, 107, 107);
+        z-index: 3;
+    }
+    
+
+}
 
 .section-about {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     background: $bg-about-color;
-    height: 70vh;
+    height: 100vh;
+
+    .about-wrapper {
+        margin: 2rem;
+        border: 1px solid black;
+        width: 100%;
+        padding: 2rem;
+    }
 
     h1 {
-        position: absolute;
         color: white;
-        font-size: 4rem;
-        left: 10%;
-        margin-top: 3rem;
+        font-size: 3rem;
     }
 
 }
@@ -106,21 +107,11 @@ $bg-color-contact: #13b6c8 linear-gradient(45deg,#006292,#13b6c8);
     background: $bg-projects-color;
     height: 100vh;
 
-
     h1 {
         color: white;
         font-size: 4rem;
         left: 10%;
         margin-top: 3rem;
-    }
-
-    img {
-        max-width: 25%;
-        max-height: 25%;
-    }
-
-    img:hover {
-        border: 100px solid black;
     }
 
 }
