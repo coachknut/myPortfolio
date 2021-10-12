@@ -56,15 +56,15 @@
 }
 
 .section-home {
-  height: 80vh;
+  height: 100vh;
 }
 
 .section-home .home-video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  right: 0;
+  bottom: 0;
+  top: 0;
   z-index: -1;
 }
 
