@@ -91,7 +91,7 @@
 }
 
 .section-about .about-wrapper {
-  margin: 2rem;
+  margin: 0rem;
   border: 1px solid black;
   width: 100%;
   padding: 2rem;
@@ -125,14 +125,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #13b6c8 linear-gradient(45deg, #006292, #13b6c8);
 }
 
 .section-contact h1 {
-  position: absolute;
   color: white;
   font-size: 4rem;
   left: 10%;

@@ -87,7 +87,7 @@ $bg-color-contact: #13b6c8 linear-gradient(45deg,#006292,#13b6c8);
     height: 100vh;
 
     .about-wrapper {
-        margin: 2rem;
+        margin: 0rem;
         border: 1px solid black;
         width: 100%;
         padding: 2rem;
@@ -118,14 +118,18 @@ $bg-color-contact: #13b6c8 linear-gradient(45deg,#006292,#13b6c8);
 .section-contact {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background: $bg-color-contact;
 
     h1 {
-        position: absolute;
         color: white;
         font-size: 4rem;
         left: 10%;
         margin-top: 3rem;
     }
+
+
+    
 }
+
+
